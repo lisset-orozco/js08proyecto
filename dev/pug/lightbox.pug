@@ -1,0 +1,12 @@
+extends templates/template
+block main
+  h1 Lightbox gallery
+  .gallery-container#gallery-container
+    - var n = 1
+    while n<= 18
+      .gallery-item
+        img(src="img/gallery-" + n + "-thumb.jpg", alt="Descripción de la imagen " + n).gallery-img
+      - n++
+  script(src="js/lightbox.js")
+  script.
+    lightbox(document.getElementById('gallery-container'));
