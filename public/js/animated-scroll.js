@@ -32,16 +32,6 @@ var animatedScroll = function animatedScroll(scrollFragment, finalPosition) {
         clearInterval(animatedScroll);
       }
     }
-    /* if (targetElement.id === 'top') {
-        // console.log(targetElement.id);
-        // console.log(document.documentElement.scrollTop);
-        document.documentElement.scrollTop --;
-        if (document.documentElement.scrollTop <= 0)
-          clearInterval(animatedScroll);
-      } else {   
-        if (document.documentElement.scrollTop >= finalPosition)
-          clearInterval(animatedScroll);
-      }*/
   }, 1);
 };
 
@@ -87,10 +77,3 @@ var animatedScrollAllLinks = function animatedScrollAllLinks(time) {
 animatedScrollAllLinks(500);
 // ya no necesitamos el destino 'cap2' si no el origen 'link2'
 // animatedScrollEvent(document.getElementById('link2'), 500);
-
-/*
-let animatedScroll = setInterval(function() {
-  // debugger;
-  document.documentElement.scrollTop += 10;
-}, 10);
-*/

@@ -119,12 +119,9 @@ var lightbox = function lightbox(container) {
   openLightboxEvent(container, images, larges, descriptions);
 };
 
-// lightbox(document.getElementById('gallery-container'));
-
 /** 
-   * 
+// lightbox(document.getElementById('gallery-container'));
 console.log(document.querySelector('.gallery-container'));
 console.log(getImages(document.querySelector('.gallery-container')));
 console.log(getLargeImages(getImages(document.querySelector('.gallery-container'))));
-
    */
